@@ -48,6 +48,7 @@
     height: 6.2rem;
     font-size: 2rem;
     padding: 2rem;
+    cursor: pointer;
 }
 
 .bg-page {
@@ -171,11 +172,73 @@
 }
 
 .hd-search {
+    position: relative;
     font-size: 1.8rem;
+}
+
+.hd-search-icon:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.hd-search-form {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    right: -6rem;
+    top: calc(100%);
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.hd-search-form.active {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 2.5rem);
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+.form-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    position: relative;
+}
+
+.form-ctn::before {
+    content: "";
+    position: absolute;
+    right: 6.5rem;
+    bottom: calc(100% - 1px);
+    width: 1rem;
+    height: 1rem;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #fff;
+}
+
+.form-ctn input {
+    color: #000;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.form-ctn input[type='submit'] {
+    background: url('../images/icon/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.form-ctn input[type='submit']:hover {
+    background-color: #c1c1c1c1;
 }
 
 .hd-bar {
     display: none;
+    cursor: pointer;
 }
 
 .banner-page {
@@ -210,7 +273,6 @@
     width: 100%;
     height: 29.6875vw;
     min-height: 20rem;
-
 }
 
 .banner-page-img img {
@@ -381,6 +443,68 @@
     transform-origin: center right;
     transition: transform 0.5s ease;
 }
+
+/* Policy */
+.policy {
+    padding: 9rem 0;
+}
+
+.policy-box {
+    
+}
+
+.policy-item {
+    margin-bottom: 8rem;
+}
+
+.policy-tt {
+    color: var(--secondary-color);
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom:  3.5rem;
+    padding-bottom: 3.5rem;
+    transition: 0.3s; 
+    position: relative;
+}
+
+.policy-tt::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 28.2rem;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.policy-ctn {
+    display: flex;
+    width: calc(100% + 2.4rem);
+    margin-left: -1.2rem;
+}
+
+.policy-desc {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #5A5A5A;
+}
+
+.policy-dt {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #5A5A5A;
+    line-height: 1.5;
+}
+
+.policy-dt p {
+    margin-bottom: 2.4rem;
+}
+
+.policy-dt p:last-child {
+    margin-bottom: 0;
+}
+
 
 .ft {  
     color: #fff;

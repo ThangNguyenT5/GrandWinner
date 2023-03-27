@@ -9,6 +9,7 @@ AOS.init(
 const btnBar = document.querySelector('.hd-bar')
 const btnClose = document.querySelector('.hd-menu-close')
 const bgPage = document.querySelector('.bg-page')
+const btnSearch = document.querySelector('.hd-search')
 
 btnBar.onclick = function () {
     const hdMenu = document.querySelector('.hd-menu')
@@ -33,8 +34,18 @@ bgPage.onclick = () => {
     hdMenu.classList.remove('active')
     const bgPage = document.querySelector('.bg-page')
     bgPage.classList.remove('active')
+    const searchForm = document.querySelector('.hd-search-form')
+    searchForm.classList.remove('active')
     document.body.style.overflow = 'auto'
 }
+
+btnSearch.onclick = () => {
+    const searchForm = document.querySelector('.hd-search-form')
+    searchForm.classList.add('active')
+    bgPage.classList.add('active')
+}
+
+
 
 
 window.onscroll = function() {

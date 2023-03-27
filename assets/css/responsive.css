@@ -2,6 +2,12 @@
   .hd {
     padding: 1.2rem 1.5rem;
   }
+  .policy {
+    padding: 5.6rem 0;
+  }
+  .policy-item {
+    margin-bottom: 4.8rem;
+  }
 }
 
 @media screen and (max-width:1200px) {
@@ -106,6 +112,21 @@
     white-space: nowrap;
   }
 
+
+  .policy-tt {
+    font-size: 3.3rem;
+    margin-bottom: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .policy-desc {
+    font-size: 1.6rem;
+  }
+
+  .policy-dt {
+    font-size: 1.6rem;
+  }
+
   /* FOOTER */
 
   .ft {
@@ -155,6 +176,21 @@
     font-size: 2.8rem;
     line-height: 3.5rem;
   }
+
+  .policy-tt {
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .policy-desc {
+    font-size: 1.5rem;
+  }
+
+  .policy-dt {
+    font-size: 1.5rem;
+  }
+
   /* FOOTER */
   .ft-tt {
     font-size: 1.8rem;
@@ -184,6 +220,35 @@
 
   .store-table table td {
 
+  }
+
+  .policy-tt {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .policy-ctn {
+    flex-direction: column;
+  }
+
+  .policy-ctn > .col.col-4,
+  .policy-ctn > .col.col-8 {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .policy-ctn > .col.col-4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .policy-desc {
+    font-size: 1.5rem;
+  }
+
+  .policy-dt {
+    font-size: 1.5rem;
   }
   
   /* FOOTER */
