@@ -49,7 +49,6 @@ btnSearch.onclick = () => {
 
 
 window.onscroll = function() {
-    console.log(scrollY)
     const menuSocial = document.querySelector('.menu-social-fixed')
     if (scrollY > 250) {
         menuSocial.classList.add('active')
