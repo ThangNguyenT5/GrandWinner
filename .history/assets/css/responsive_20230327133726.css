@@ -1,0 +1,32 @@
+@media screen and (max-width:1500px){
+  .hd {
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  /* .hdMenu {
+    display: none;
+  } */
+
+  .hd-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 28rem;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 3;
+  }
+  .menu-list {
+    flex-direction: column;
+    z-index: 3;
+  }
+
+  .hd-bar {
+    display: block;
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    /* Color */
+    --primary-color: #0F1A2C;
+    --secondary-color: #F3973D;
+
+
+    --container-padding-x: 3rem;
+    --container-max-width: 100%;
+    --container-fluid: calc((120rem + var(--container-padding-x)));
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.col {
+    width: 50%;
+}

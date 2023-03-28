@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    /* Color */
+    --primary-color: #;
+    --secondary-color: #;
+
+
+    --container-padding-x: 3rem;
+    --container-max-width: 100%;
+    --container-fluid: calc((120rem + var(var(--container-padding-x))));
+}
+
+.container {
+    width: 100%;
+}
+.container-fluid { 
+    max-width: calc((1200px + var(--container-padding-x)));
+}

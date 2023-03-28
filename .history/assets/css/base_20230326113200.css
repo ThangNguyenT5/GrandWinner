@@ -1,0 +1,10 @@
+:root {
+    --container-padding-x: 3rem;
+}
+
+.container {
+    width: 100%;
+}
+.container-fluid { 
+    max-width: calc((1200px + var(--container-padding-x)));
+}

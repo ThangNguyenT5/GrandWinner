@@ -1,0 +1,4 @@
+.hd-ctn {
+    width: var(--container-max-width);
+    background-color: var(--primary-color);
+}
