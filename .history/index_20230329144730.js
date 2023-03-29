@@ -1,6 +1,6 @@
 AOS.init(
     {
-        once: true, 
+        once: false, 
         startEvent: 'DOMContentLoaded',
         offset: 0
     }
@@ -68,6 +68,7 @@ function activeProduct() {
     imgItems.forEach((img) => {
       img.onclick = (e) => {
         let imgItemActive = it.querySelector(".img-thumb-item.current-menu-item");
+        console.log(imgItemActive)
         imgItemActive.classList.remove("current-menu-item");
         img.classList.add("current-menu-item");
         imgItem.src = e.target.src;
@@ -78,24 +79,3 @@ function activeProduct() {
 }
 
 activeProduct();
-
-function activeTab() {
-  let tab = document.querySelector(".tab");
-  let tabs = tab.querySelectorAll('.product-btn')
-  let pannels = tab.querySelectorAll('.product-pannel')
-  tabs.forEach((element,index) => {
-    element.onclick = (e) => {
-      tabs.forEach((item) => {
-        item.classList.remove('current-menu-item')
-
-      })
-      element.classList.add('current-menu-item');
-      pannels.forEach((pan) => {
-        pan.classList.remove('active');
-      })
-      pannels[index].classList.add('active');
-    }
-  })
-}
-
-activeTab();

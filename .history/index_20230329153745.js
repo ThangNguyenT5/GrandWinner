@@ -83,18 +83,46 @@ function activeTab() {
   let tab = document.querySelector(".tab");
   let tabs = tab.querySelectorAll('.product-btn')
   let pannels = tab.querySelectorAll('.product-pannel')
+
+
   tabs.forEach((element,index) => {
     element.onclick = (e) => {
+
       tabs.forEach((item) => {
         item.classList.remove('current-menu-item')
 
       })
+
       element.classList.add('current-menu-item');
+
       pannels.forEach((pan) => {
         pan.classList.remove('active');
       })
+
       pannels[index].classList.add('active');
+
     }
+
+      // let tabActive = document.querySelector('.product-nav-item.product-btn.current-menu-item')
+      // let pannelActive = document.querySelector('.home.products .product-pannel.active')
+
+
+      // pannels.forEach((pan) => {
+      //   tab.onclick = (e) => { 
+      //     let tabActive = document.querySelector('.product-nav-item.product-btn.current-menu-item')
+      //     let pannelActive = document.querySelector('.home.products .product-pannel.active')
+
+      //     tabActive.classList.remove('current-menu-item')
+      //     pannelActive.classList.remove('active')
+      //     tab.classList.add('current-menu-item')
+      //     pannelActive.classList.add('active')
+      //   }
+      })
+      
+  
+      
+
+
   })
 }
 

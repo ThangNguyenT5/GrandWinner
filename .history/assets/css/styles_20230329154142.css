@@ -1042,11 +1042,13 @@
 
 .product-pannel {
     display: none;
-    animation: zoomIn 1s ease infinite;
+    transform: scale(0);
+    transition: 0.3s;
 }
 
 .product-pannel.active {
     display: block;
+
 }
 
 .welcome {

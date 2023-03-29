@@ -1042,7 +1042,8 @@
 
 .product-pannel {
     display: none;
-    animation: zoomIn 1s ease infinite;
+    transition: 0.3s;
+    animation: zoomIn 1s ease forwards;
 }
 
 .product-pannel.active {

@@ -49,10 +49,10 @@ button, select, input, textarea {
 }
 
 @keyframes zoonIn {
-    0% {
+    from {
         transform: scale(0.8);
     }
-    100% {
+    to {
         transform: scale(1);
     }
 }

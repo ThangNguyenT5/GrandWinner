@@ -80,20 +80,27 @@ function activeProduct() {
 activeProduct();
 
 function activeTab() {
-  let tab = document.querySelector(".tab");
-  let tabs = tab.querySelectorAll('.product-btn')
-  let pannels = tab.querySelectorAll('.product-pannel')
-  tabs.forEach((element,index) => {
-    element.onclick = (e) => {
-      tabs.forEach((item) => {
-        item.classList.remove('current-menu-item')
+  let tabs = document.querySelectorAll('.product-nav-item.product-btn')
+  let pannels = document.querySelectorAll('.home.products .product-pannel')
 
-      })
-      element.classList.add('current-menu-item');
+
+  tabs.forEach((tab) => {
+    tab.onclick = (e) => {
+      let tabActive = document.querySelector('.product-nav-item.product-btn.current-menu-item')
+      let pannelActive = document.querySelector('.home.products .product-pannel.active')
+
+
       pannels.forEach((pan) => {
-        pan.classList.remove('active');
+        console.log(pan)
       })
-      pannels[index].classList.add('active');
+      pannelActive.classList.remove('active')
+      tabActive.classList.remove('current-menu-item')
+      tab.classList.add('current-menu-item')
+      pannelActive.classList.add('active')
+  
+      
+
+
     }
   })
 }

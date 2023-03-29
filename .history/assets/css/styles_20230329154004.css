@@ -1041,12 +1041,11 @@
 }
 
 .product-pannel {
-    display: none;
-    animation: zoomIn 1s ease infinite;
+    visibility: hidden;
 }
 
 .product-pannel.active {
-    display: block;
+    visibility: visible;
 }
 
 .welcome {

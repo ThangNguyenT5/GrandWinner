@@ -68,6 +68,7 @@ function activeProduct() {
     imgItems.forEach((img) => {
       img.onclick = (e) => {
         let imgItemActive = it.querySelector(".img-thumb-item.current-menu-item");
+        console.log(imgItemActive)
         imgItemActive.classList.remove("current-menu-item");
         img.classList.add("current-menu-item");
         imgItem.src = e.target.src;
@@ -80,20 +81,14 @@ function activeProduct() {
 activeProduct();
 
 function activeTab() {
-  let tab = document.querySelector(".tab");
-  let tabs = tab.querySelectorAll('.product-btn')
-  let pannels = tab.querySelectorAll('.product-pannel')
-  tabs.forEach((element,index) => {
-    element.onclick = (e) => {
-      tabs.forEach((item) => {
-        item.classList.remove('current-menu-item')
+  let tabs = document.querySelectorAll('.product-nav-item.product-btn')
+  console.log(tabs)
 
-      })
-      element.classList.add('current-menu-item');
-      pannels.forEach((pan) => {
-        pan.classList.remove('active');
-      })
-      pannels[index].classList.add('active');
+  tabs.forEach((tab) => {
+    tab.onclick = (e) => {
+      let tabActive = document.querySelector('.product-nav-item.product-btn.current-menu-item')
+      tabActive.classList.remove('current-menu-item')
+      tab.classList.add('current-menu-item')
     }
   })
 }

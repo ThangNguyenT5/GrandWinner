@@ -576,7 +576,6 @@
     position: relative;
     transition: 0.5s;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .btn-map:hover {
@@ -784,7 +783,6 @@
 }
 
 .product-item:hover .product-box-info .name {
-    font-size: 1.7rem;
     color: var(--secondary-color);
 }
 
@@ -1005,11 +1003,6 @@
     margin: 0 1.4rem;
 }
 
-.product-nav-item.current-menu-item p{
-    color: #fff;
-    background-color: var(--primary-color);
-}
-
 .product-btn .btn-map,
 .banner-product-btn {
     position: relative;
@@ -1038,15 +1031,6 @@
 }
 .welcome-btn.product-btn .btn-map:hover::after {
     background-color: #fff;
-}
-
-.product-pannel {
-    display: none;
-    animation: zoomIn 1s ease infinite;
-}
-
-.product-pannel.active {
-    display: block;
 }
 
 .welcome {
@@ -1239,9 +1223,6 @@
     padding: 2.2rem 4.5rem;
     z-index: 1;
 }
-.blog-info:hover .name{
-    color: var(--secondary-color);
-}
 
 .blog-info .time .time-icon {
     display: inline-block;
@@ -1301,11 +1282,6 @@
     background: url(../images/icon/arrow-right-yellow.svg) no-repeat;
     background-size: cover;
     transition: 0.3s ease;
-}
-
-.view-more:hover::before {
-    right: -1rem;
-
 }
 
 .blog-thumbs {
@@ -1376,7 +1352,6 @@
     line-height: 4.5rem;
     font-style: italic;
     margin-bottom: 2.4rem;
-    text-align: center;
 }
 
 .get-news-tt .h1 {

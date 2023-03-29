@@ -576,7 +576,6 @@
     position: relative;
     transition: 0.5s;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .btn-map:hover {
@@ -1005,8 +1004,7 @@
     margin: 0 1.4rem;
 }
 
-.product-nav-item.current-menu-item p{
-    color: #fff;
+.product-nav-item.current-menu-item a{
     background-color: var(--primary-color);
 }
 
@@ -1038,15 +1036,6 @@
 }
 .welcome-btn.product-btn .btn-map:hover::after {
     background-color: #fff;
-}
-
-.product-pannel {
-    display: none;
-    animation: zoomIn 1s ease infinite;
-}
-
-.product-pannel.active {
-    display: block;
 }
 
 .welcome {

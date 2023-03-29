@@ -1040,15 +1040,6 @@
     background-color: #fff;
 }
 
-.product-pannel {
-    display: none;
-    animation: zoomIn 1s ease infinite;
-}
-
-.product-pannel.active {
-    display: block;
-}
-
 .welcome {
     position: relative;
 }
