@@ -251,7 +251,6 @@
   .blog-box {
     flex-wrap: wrap;
     row-gap: 3rem;
-    margin: 0 -1.5rem;
   }
 
   .blog-thumbs {
@@ -526,9 +525,7 @@
     padding: 3rem 0;
   }
 
-  .get-news-form {
-    margin-top: 1rem;
-  }
+  
 
   .get-news-desc {
     font-size: 1.4rem;

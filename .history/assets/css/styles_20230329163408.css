@@ -784,6 +784,7 @@
 }
 
 .product-item:hover .product-box-info .name {
+    font-size: 1.7rem;
     color: var(--secondary-color);
 }
 
